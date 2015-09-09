@@ -1,0 +1,36 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    padding: 0 .5rem;
+}
+
+details {
+    background-color: rgba(200, 255, 144, 0.31);
+    border: 2px solid gray;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+code {
+    background-color: gainsboro;
+    padding: .15rem;
+    border: 1px solid #9b9a9a;
+    border-radius: .2rem;
+}
+
+.tag::before {
+    content: '<';
+}
+
+.tag:after {
+    content: '>';
+}
+
+summary {
+    cursor: pointer;
+    outline: none;
+}
+
+summary > h2 {
+    display: inline-block;
+}
