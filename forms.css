@@ -1,0 +1,39 @@
+fieldset {
+    padding: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+label > span {
+    display: block;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid + .invalid {
+    visibility: hidden;
+}
+
+input:invalid + .invalid {
+    visibility: visible;
+}
+
+.invalid {
+    display: inline-block;
+    color: brown;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+input:required {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 1px solid #ccc;
+}
