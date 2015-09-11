@@ -15,6 +15,7 @@ function initialize() {
     handleOperation('btnMinus', (a, b) => a - b)
     handleOperation('btnTimes', (a, b) => a * b)
     handleOperation('btnDivide', (a, b) => a / b)
+    handleOperation('btnSquare', a => a * a)
 }
 
 function handleClear() {
