@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\qunit.css" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -75,9 +76,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="scripts\calc.js" />
     <Content Include="scripts\events.js" />
+    <Content Include="scripts\qunit.js" />
+    <Content Include="styles\calc.css" />
+    <Content Include="tests\calc-tests.js" />
     <Content Include="views\annoying.html" />
     <Content Include="styles\forms.css" />
+    <Content Include="tests\calculator-tests.html" />
+    <Content Include="views\calculator.html" />
     <Content Include="views\forms.html" />
     <Content Include="views\kitten.html" />
     <Content Include="img\kitten.jpg" />
