@@ -66,8 +66,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="audio\01-D-Town.mp3" />
     <Content Include="Content\qunit.css" />
     <Content Include="packages.config" />
+    <Content Include="scripts\media.js" />
+    <Content Include="styles\media.css" />
+    <Content Include="video\tv.ogv" />
+    <Content Include="video\tv.webm" />
+    <Content Include="video\walk.m4v" />
+    <Content Include="video\scratch.ogv" />
+    <Content Include="video\scratch.webm" />
+    <Content Include="video\walk.ogv" />
+    <Content Include="video\walk.webm" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -81,6 +91,12 @@
     <Content Include="scripts\qunit.js" />
     <Content Include="styles\calc.css" />
     <Content Include="tests\calc-tests.js" />
+    <Content Include="video\tv.m4v" />
+    <Content Include="video\tv.mp4" />
+    <Content Include="video\walk.mp4" />
+    <Content Include="video\scratch.m4v" />
+    <Content Include="video\scratch.mp4" />
+    <Content Include="views\media.html" />
     <Content Include="views\annoying.html" />
     <Content Include="styles\forms.css" />
     <Content Include="tests\calculator-tests.html" />
