@@ -12,32 +12,23 @@
         'keyup',
         function () {
             clearHighlight();
-            highlightMatchingElements(this.value);
+            actionMatchingElements(this.value, highlightElement);
         },
         false);
 
     function onCodeMouseEnter() {
-        highlightMatchingElements(this.innerText);
+        actionMatchingElements(this.innerText, highlightElement);
         highlightElement(this);
     }
 
     function onCodeMouseLeave() {
-        unhighlightMatchingElements(this.innerText);
+        actionMatchingElements(this.innerText, unhighlightElement);
         unhighlightElement(this);
     }
 
-    function highlightMatchingElements(selector) {
+    function actionMatchingElements(selector, action) {
         var matches = document.querySelectorAll(selector);
-        [].forEach.call(matches, function (match) {
-            highlightElement(match);
-        });
-    }
-
-    function unhighlightMatchingElements(selector) {
-        var matches = document.querySelectorAll(selector);
-        [].forEach.call(matches, function (match) {
-            unhighlightElement(match);
-        });
+        [].forEach.call(matches, action);
     }
 
     function highlightElement(element) {
@@ -49,7 +40,7 @@
     }
 
     function clearHighlight() {
-        unhighlightMatchingElements('.highlight');
+        actionMatchingElements('.highlight', unhighlightElement);
     }
 
 })();
