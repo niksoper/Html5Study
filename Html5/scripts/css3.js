@@ -18,12 +18,12 @@
     }
 
     function onCodeMouseEnter() {
-        actionMatchingElements(this.innerText, highlightElement);
+        actionMatchingElements(this.innerHTML, highlightElement);
         highlightElement(this);
     }
 
     function onCodeMouseLeave() {
-        actionMatchingElements(this.innerText, unhighlightElement);
+        actionMatchingElements(this.innerHTML, unhighlightElement);
         unhighlightElement(this);
     }
 
