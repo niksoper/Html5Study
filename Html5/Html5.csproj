@@ -69,7 +69,9 @@
     <Content Include="audio\01-D-Town.mp3" />
     <Content Include="Content\qunit.css" />
     <Content Include="packages.config" />
+    <Content Include="scripts\css3.js" />
     <Content Include="scripts\media.js" />
+    <Content Include="styles\css3.css" />
     <Content Include="styles\media.css" />
     <Content Include="video\tv.ogv" />
     <Content Include="video\tv.webm" />
@@ -97,6 +99,7 @@
     <Content Include="video\walk.mp4" />
     <Content Include="video\scratch.m4v" />
     <Content Include="video\scratch.mp4" />
+    <Content Include="views\css3.html" />
     <Content Include="views\media.html" />
     <Content Include="views\annoying.html" />
     <Content Include="styles\forms.css" />
