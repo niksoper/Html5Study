@@ -8,13 +8,14 @@
         code.addEventListener('mouseleave', onCodeMouseLeave, false);
     });
 
-    document.getElementById('selectorInput').addEventListener(
-        'keyup',
-        function () {
-            clearHighlight();
-            actionMatchingElements(this.value, highlightElement);
-        },
-        false);
+    var selectorInput = document.getElementById('selectorInput');
+    selectorInput.addEventListener('keyup', executeUserSelector, false);
+    selectorInput.addEventListener('search', executeUserSelector, false);
+
+    function executeUserSelector() {
+        clearHighlight();
+        actionMatchingElements(selectorInput.value, highlightElement);
+    }
 
     function onCodeMouseEnter() {
         actionMatchingElements(this.innerText, highlightElement);
