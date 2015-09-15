@@ -78,6 +78,7 @@
     <Content Include="video\scratch.webm" />
     <Content Include="video\walk.ogv" />
     <Content Include="video\walk.webm" />
+    <Content Include="fonts\1942.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

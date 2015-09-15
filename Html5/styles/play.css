@@ -1,6 +1,16 @@
+@font-face {
+    font-family: typewriter;
+    src: url(../fonts/1942.ttf);
+}
+
+.typed {
+    font-family: typewriter;
+}
+
 body {
     font-family: Verdana, Geneva, sans-serif;
     padding: 0 .5rem;
+    color: #222;
 }
 
 details {
