@@ -37,7 +37,7 @@
     }
 
     function unhighlightElement(element) {
-        element.className = element.className.replace('highlight', '');
+        element.className = element.className.replace(' highlight', '');
     }
 
     function clearHighlight() {
