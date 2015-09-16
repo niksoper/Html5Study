@@ -1,0 +1,37 @@
+﻿.instructions {
+    margin-bottom: 3rem;
+}
+
+.board {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.peg, .base {
+    background-color: cornflowerblue;
+    border: 3px solid brown;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.peg {
+    display: inline-block;
+    width: 15px;
+    height: 250px;
+    margin: 0 75px;
+}
+
+.base {
+    width: 500px;
+    height: 15px;
+    margin: 0;
+}
+
+.disc {
+    height: 10px;
+    width: 150px;
+    background-color: burlywood;
+    border: 1px solid brown;
+    border-radius: 2px;
+    transform: translate(-70px, 244px);
+}
