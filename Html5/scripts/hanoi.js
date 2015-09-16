@@ -16,7 +16,6 @@
         setWidth(disc);
         disc.addEventListener('dragend', dragEnd, false);
         disc.addEventListener('dragstart', dragStart, false);
-        disc.addEventListener('mouseover', mouseOver, false);
     });
 
     forEach.call(pegs, function (peg) {
@@ -27,17 +26,23 @@
         peg.addEventListener('drop', drop, false);
     });
 
-    function mouseOver(e) {
-        console.log('mouseover');
-    }
-
     function dragStart(e) {
         sourceElement = this;
     }
 
     function drop(e) {
         cancel(e);
-        e.target.appendChild(sourceElement);
+
+        if (!canDrop(this)) {
+            return;
+        }
+
+        if (e.target.childElementCount) {
+            e.target.insertBefore(sourceElement, e.target.childNodes[0]);
+        } else {
+            e.target.appendChild(sourceElement);
+        }
+
         sourceElement = null;
 
         forEach.call(pegs, function (peg) {
@@ -45,9 +50,22 @@
         });
     }
 
+    function canDrop(peg) {
+        if (peg.childElementCount === 0) {
+            return true;
+        }
+
+        var topDiscSize = getDiscSize(peg.children[0]),
+            sourceDiscSize = getDiscSize(sourceElement);
+
+        return sourceDiscSize <= topDiscSize;
+    }
+
     function dragOver(e) {
         cancel(e);
-        $(this).addClass(targetClass);
+        if (canDrop(this)) {
+            $(this).addClass(targetClass);
+        }
     }
 
     function dragLeave(e) {
@@ -65,8 +83,12 @@
         e.preventDefault();
     }
 
+    function getDiscSize(disc) {
+        return Number(disc.getAttribute('data-discsize'));
+    }
+
     function setWidth(disc) {
-        var discWidth = Number(disc.getAttribute('data-discsize')) * 37.5;
+        var discWidth = getDiscSize(disc) * 37.5;
         $(disc).width(discWidth + 'px');
     }
 
