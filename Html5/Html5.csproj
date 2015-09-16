@@ -70,6 +70,7 @@
     <Content Include="Content\qunit.css" />
     <Content Include="packages.config" />
     <Content Include="scripts\css3.js" />
+    <Content Include="scripts\hanoi.js" />
     <Content Include="scripts\media.js" />
     <Content Include="styles\css3.css" />
     <Content Include="styles\hanoi.css" />

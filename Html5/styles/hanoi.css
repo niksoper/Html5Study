@@ -9,7 +9,7 @@
 
 .peg, .base {
     background-color: cornflowerblue;
-    border: 3px solid brown;
+    border: 2px solid brown;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -22,9 +22,25 @@
 }
 
 .base {
-    width: 500px;
+    width: 510px;
     height: 15px;
     margin: 0;
+}
+
+.over {
+    border: 2px dashed green;
+    background-color: rgba(100, 149, 237, 0.59);
+}
+
+.disc {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    /* Support old versions of WebKit */
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
 }
 
 .disc {
@@ -33,5 +49,5 @@
     background-color: burlywood;
     border: 1px solid brown;
     border-radius: 2px;
-    transform: translate(-70px, 244px);
+    /*transform: translate(-70px, 244px);*/
 }
