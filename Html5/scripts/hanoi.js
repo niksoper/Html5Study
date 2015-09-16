@@ -48,6 +48,12 @@
 
     function dragStart(e) {
         sourceElement = this;
+
+        forEach.call(pegs, function (peg) {
+            if (canDrop(peg)) {
+                $(peg).addClass(targetClass);
+            }
+        });
     }
 
     function drop(e) {
@@ -104,10 +110,6 @@
             return;
         }
         cancel(e);
-
-        if (canDrop(this)) {
-            $(this).addClass(targetClass);
-        }
     }
 
     function dragLeave(e) {
