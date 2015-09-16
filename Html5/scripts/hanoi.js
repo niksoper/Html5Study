@@ -5,6 +5,8 @@
     var
         forEach = Array.prototype.forEach,
         targetClass = 'over',
+        moveCounter = document.getElementById('move-count'),
+        moves = 0,
         pegs = document.getElementsByClassName('peg'),
         draggableQuery = '[draggable="true"]',
         allDiscsQuery = '.disc',
@@ -83,6 +85,8 @@
 
         setDraggableHandlers();
 
+        incrementMoves();
+
         sourceElement = null;
     }
 
@@ -147,4 +151,9 @@
         });
     }
 
+    function incrementMoves() {
+        moves++;
+        moveCounter.innerText = moves;
+
+    }
 });
