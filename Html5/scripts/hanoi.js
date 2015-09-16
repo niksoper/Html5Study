@@ -9,7 +9,6 @@
         discs = document.querySelectorAll('.disc'),
         sourceElement = null,
         DISC_HEIGHT = 10,
-        PEG_WIDTH = 15,
         PEG_HEIGHT = 250;
 
     forEach.call(discs, function (disc) {
@@ -88,15 +87,16 @@
     }
 
     function setWidth(disc) {
-        var discWidth = getDiscSize(disc) * 37.5;
+        var discWidth = getDiscSize(disc) * 25;
         $(disc).width(discWidth + 'px');
     }
 
     function positionDiscs(peg) {
-        var dy = PEG_HEIGHT - (peg.childElementCount * DISC_HEIGHT),
+        var pegWidth = $(peg).width(),
+            dy = PEG_HEIGHT - (peg.childElementCount * DISC_HEIGHT),
             dx = null;
         forEach.call(peg.children, function (disc, index) {
-            dx = ($(disc).width() / -2) + (PEG_WIDTH / 2);
+            dx = ($(disc).width() / -2) + (pegWidth / 2);
             disc.style.transform = 'translate(' + dx + 'px, ' + dy + 'px)';
         });
     }
