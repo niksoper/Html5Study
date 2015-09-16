@@ -33,6 +33,13 @@
 }
 
 .disc {
+    height: 10px;
+    background-color: burlywood;
+    border: 1px solid brown;
+    border-radius: 2px;
+}
+
+[draggable="true"] {
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
@@ -41,13 +48,4 @@
     /* Support old versions of WebKit */
     -khtml-user-drag: element;
     -webkit-user-drag: element;
-}
-
-.disc {
-    height: 10px;
-    width: 150px;
-    background-color: burlywood;
-    border: 1px solid brown;
-    border-radius: 2px;
-    /*transform: translate(-70px, 244px);*/
 }

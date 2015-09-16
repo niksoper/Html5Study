@@ -6,52 +6,91 @@
         forEach = Array.prototype.forEach,
         targetClass = 'over',
         pegs = document.getElementsByClassName('peg'),
-        discs = document.querySelectorAll('.disc'),
+        draggableQuery = '[draggable="true"]',
+        allDiscsQuery = '.disc',
         sourceElement = null,
         DISC_HEIGHT = 10,
         PEG_HEIGHT = 250;
 
-    forEach.call(discs, function (disc) {
-        setWidth(disc);
-        disc.addEventListener('dragend', dragEnd, false);
-        disc.addEventListener('dragstart', dragStart, false);
-    });
+    initWidths();
+    setDraggableHandlers();
+    setDropTargetHandlers();
 
-    forEach.call(pegs, function (peg) {
-        positionDiscs(peg);
-        peg.addEventListener('dragenter', cancel, false);
-        peg.addEventListener('dragover', dragOver, false);
-        peg.addEventListener('dragleave', dragLeave, false);
-        peg.addEventListener('drop', drop, false);
-    });
+    function initWidths() {
+        forEach.call(document.querySelectorAll(allDiscsQuery), setWidth);
+    }
+
+    function setDraggableHandlers() {
+        clearDraggableHandlers();
+
+        forEach.call(document.querySelectorAll(draggableQuery), function (disc) {
+            disc.addEventListener('dragend', dragEnd, false);
+            disc.addEventListener('dragstart', dragStart, false);
+        });
+    }    
+
+    function clearDraggableHandlers() {
+        forEach.call(document.querySelectorAll(allDiscsQuery), function (disc) {
+            disc.removeEventListener('dragend', dragEnd, false);
+            disc.removeEventListener('dragstart', dragStart, false);
+        });
+    }
+
+    function setDropTargetHandlers() {
+        forEach.call(pegs, function (peg) {
+            positionDiscs(peg);
+            peg.addEventListener('dragenter', cancel, false);
+            peg.addEventListener('dragover', dragOver, false);
+            peg.addEventListener('dragleave', dragLeave, false);
+            peg.addEventListener('drop', drop, false);
+        });
+    }
 
     function dragStart(e) {
         sourceElement = this;
     }
 
     function drop(e) {
+        if (sourceElement == null) {
+            return;
+        }
         cancel(e);
 
         if (!canDrop(this)) {
             return;
         }
 
+        if (sourceElement.nextElementSibling) {
+            sourceElement.nextElementSibling.setAttribute('draggable', true);
+        }
+
         if (e.target.childElementCount) {
-            e.target.insertBefore(sourceElement, e.target.childNodes[0]);
+            e.target.children[0].removeAttribute('draggable');
+            e.target.insertBefore(sourceElement, e.target.children[0]);
         } else {
             e.target.appendChild(sourceElement);
         }
 
-        sourceElement = null;
-
         forEach.call(pegs, function (peg) {
             positionDiscs(peg);
         });
+
+        setDraggableHandlers();
+
+        sourceElement = null;
     }
 
     function canDrop(peg) {
         if (peg.childElementCount === 0) {
             return true;
+        }
+
+        if (sourceElement == null) {
+            return false;
+        }
+
+        if (sourceElement === peg.children[0]) {
+            return false;
         }
 
         var topDiscSize = getDiscSize(peg.children[0]),
@@ -61,7 +100,11 @@
     }
 
     function dragOver(e) {
+        if (sourceElement == null) {
+            return;
+        }
         cancel(e);
+
         if (canDrop(this)) {
             $(this).addClass(targetClass);
         }
@@ -80,6 +123,7 @@
     function cancel(e) {
         e.stopPropagation();
         e.preventDefault();
+        return false;
     }
 
     function getDiscSize(disc) {
