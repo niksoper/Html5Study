@@ -74,6 +74,7 @@
     <Content Include="scripts\media.js" />
     <Content Include="styles\css3.css" />
     <Content Include="styles\hanoi.css" />
+    <Content Include="styles\layout.css" />
     <Content Include="styles\media.css" />
     <Content Include="video\tv.ogv" />
     <Content Include="video\tv.webm" />
@@ -103,6 +104,8 @@
     <Content Include="video\scratch.mp4" />
     <Content Include="views\css3.html" />
     <Content Include="views\hanoi.html" />
+    <Content Include="views\positioning.html" />
+    <Content Include="views\layout.html" />
     <Content Include="views\media.html" />
     <Content Include="views\annoying.html" />
     <Content Include="styles\forms.css" />

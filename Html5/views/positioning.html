@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"></meta>
+		<title>Positioning</title>
+        <link href="../styles/play.css" rel="stylesheet" />
+        <link href="../styles/layout.css" rel="stylesheet" />
+	</head>
+	<body>
+        <main>
+            <a href="layout.html" class="back">Back to layout</a>
+            <h1>Positioning</h1>
+            <p>
+                There are four different position values that can be applied to any element:
+                <code>static</code>,
+                <code>relative</code>,
+                <code>absolute</code>,
+                and
+                <code>fixed</code>.
+            </p>
+            <p>
+                The default positioning is <code>static</code>, but if any other position
+                value is used then you can adjust the position of the element using one or
+                more of the following properties:
+                <code>top</code>,
+                <code>right</code>,
+                <code>bottom</code>
+                and
+                <code>left</code>.
+            </p>
+            <div>
+                <h1>position: static (default)</h1>
+                Elements with static position are placed in the document based on the flow of the rest of the content.
+            </div>
+            <div class="relative">
+                <h1>position: relative;</h1>
+                With relative positioning, the element's position is adjusted relative to its static position.
+                This div uses <code>top: 50px; left: 30px;</code>
+                Notice that the content wraps relative to the static position, rather than the relative position.
+            </div>
+            <div class="absolute">
+                <h1>position: absolute;</h1>
+                With absolute positioning, the element's position is not affected by the flow of the document.
+                Instead it will always have the same position relative to the document and it will move when the
+                user scrolls. This div uses <code>top: 630px; left: 100px;</code>
+            </div>
+            <div class="fixed">
+                <h1>position: fixed;</h1>
+                With fixed positioning, the element's position is not affected by the flow of the document.
+                Instead it will always have the same position relative to the window and it will not move when the
+                user scrolls. This div uses <code>top: 465px; left: 200px;</code>
+            </div>
+        </main>
+	</body>
+</html>

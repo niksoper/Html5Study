@@ -1,0 +1,29 @@
+﻿
+div > h1 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+div {
+    background-color: lemonchiffon;
+    border: 1px solid brown;
+    padding: 1rem;
+}
+
+.relative {
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+.absolute {
+    position: absolute;
+    top: 630px; 
+    left: 100px;
+}
+
+.fixed {
+    position: fixed;
+    top: 465px; 
+    left: 200px;
+}

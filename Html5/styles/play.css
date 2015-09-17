@@ -49,3 +49,7 @@ summary {
 summary > h2 {
     display: inline-block;
 }
+
+a.back {
+    font-size: 0.8rem;
+}
