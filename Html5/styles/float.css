@@ -1,0 +1,60 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.left-sidebar {
+    float: left;
+    background-color: aqua;
+    padding: 0.5rem;
+    width: 180px;
+    height: 500px;
+    margin-right: 6px;
+    margin-bottom: 3px;
+}
+
+main {
+    background-color: red;    
+    padding: 6px;
+    margin-bottom: 3px;
+}
+
+main p {
+    margin 0;
+    padding: 0;
+}
+
+ aside {
+    float: right;
+    max-width: 120px;
+    background-color: orange;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 12px;
+}
+
+footer {
+    background-color: hotpink;
+    padding: 9px;
+    margin-top: 3px
+}
+
+#kitten {
+    width: 100%;
+}
+
+.picture {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.picture figure {
+    margin: 0;
+}
+
+.picture figcaption {
+    text-align: center;
+    width 100%;
+    font-size: 0.8rem;
+    padding: 3px 0;
+    font-weight: 600;
+}

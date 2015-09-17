@@ -16,6 +16,7 @@ body {
     font-family: Verdana, Geneva, sans-serif;
     padding: 0 .5rem;
     color: #222;
+    line-height: 1.3em;
 }
 
 details {
@@ -52,4 +53,8 @@ summary > h2 {
 
 a.back {
     font-size: 0.8rem;
+}
+
+.clear {
+    clear: both;
 }
