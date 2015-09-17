@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8"></meta>
@@ -7,58 +7,59 @@
 	</head>
 	<body>
 		<h1 class="typed">Getting started with HTML5</h1>
-		
-        <p>Each of the following sections is marked up using the <code class="tag">details</code> and <code class="tag">summary</code> tags, but they are only supported in Chrome!</p>
-        
-		<details>		
-			<summary>Using <code class="tag">iframes</code> and links</summary>
-			<h3>External links</h3>
-			<ul>
-				<li><a href="http://www.bbc.co.uk" target="_blank">BBC</a></li>
-				<li><a href="kitten.html" target="_blank">Kitten</a></li>
-				<li><a href="annoying.html" target="_blank">Annoying</a></li>
-				<li><a href="parent-links.html" target="_blank">Parent links</a></li>
-			</ul>
-			
-			<h3>Links to the <code class="tag">iframe</code></h3>
-			<ul>
-				<li><a href="http://www.bbc.co.uk" target="my-frame">BBC</a></li>
-				<li><a href="kitten.html" target="my-frame">Kitten</a></li>
-				<li><a href="annoying.html" target="my-frame">Annoying</a></li>
-				<li><a href="parent-links.html" target="my-frame">Parent links</a></li>
-				<li><a href="play.html" target="my-frame">Inception</a></li>
-			</ul>
-			
-			<h3>The <code class="tag">iframe</code></h3>
-			<iframe name="my-frame" 
-					sandbox="allow-same-origin allow-top-navigation" 
-					src="annoying.html"
-					width="500px"
-					height="300px"></iframe>
-		</details>
-		<details>
-			<summary>Email links</summary>
-			<h3>An email with Cc, BCc, subject and body</h3>
-			<a href="mailto:Nick&lt;nsoper@scottlogic.com&gt;?cc=niksoper@hotmail.com&bcc=niksoper@gmail.com&Subject=Using%20mailto&body=Just%20a%20test%0A%0AThanks,%0ANick">
-				Email myself
-            </a>
-            <p>Mailto href value needs to be URL encoded. Space is %20 and new line is %0A.</p>
-		</details>
-        <details>
-            <summary>Forms</summary>
-            <h3>Form validation</h3>
-            <form>
-            
-                <label for="username">Username</label>
-                <input id="username" type="text" required />
-                <div class="invalid">
-                    Username is required
-                </div>
-            
-            </form>
-            
-            <a href="forms.html">More forms</a>
+		<main>
+            <p>Each of the following sections is marked up using the <code class="tag">details</code> and <code class="tag">summary</code> tags, but they are only supported in Chrome!</p>
+
+            <details>		
+                <summary>Using <code class="tag">iframes</code> and links</summary>
+                <h3>External links</h3>
+                <ul>
+                    <li><a href="http://www.bbc.co.uk" target="_blank">BBC</a></li>
+                    <li><a href="kitten.html" target="_blank">Kitten</a></li>
+                    <li><a href="annoying.html" target="_blank">Annoying</a></li>
+                    <li><a href="parent-links.html" target="_blank">Parent links</a></li>
+                </ul>
+
+                <h3>Links to the <code class="tag">iframe</code></h3>
+                <ul>
+                    <li><a href="http://www.bbc.co.uk" target="my-frame">BBC</a></li>
+                    <li><a href="kitten.html" target="my-frame">Kitten</a></li>
+                    <li><a href="annoying.html" target="my-frame">Annoying</a></li>
+                    <li><a href="parent-links.html" target="my-frame">Parent links</a></li>
+                    <li><a href="play.html" target="my-frame">Inception</a></li>
+                </ul>
+
+                <h3>The <code class="tag">iframe</code></h3>
+                <iframe name="my-frame" 
+                        sandbox="allow-same-origin allow-top-navigation" 
+                        src="annoying.html"
+                        width="500px"
+                        height="300px"></iframe>
+            </details>
+            <details>
+                <summary>Email links</summary>
+                <h3>An email with Cc, BCc, subject and body</h3>
+                <a href="mailto:Nick&lt;nsoper@scottlogic.com&gt;?cc=niksoper@hotmail.com&bcc=niksoper@gmail.com&Subject=Using%20mailto&body=Just%20a%20test%0A%0AThanks,%0ANick">
+                    Email myself
+                </a>
+                <p>Mailto href value needs to be URL encoded. Space is %20 and new line is %0A.</p>
+            </details>
+            <details>
+                <summary>Forms</summary>
+                <h3>Form validation</h3>
+                <form>
+
+                    <label for="username">Username</label>
+                    <input id="username" type="text" required />
+                    <div class="invalid">
+                        Username is required
+                    </div>
+
+                </form>
+
+                <a href="forms.html">More forms</a>
 
         </details>
+        </main>
 	</body>
 </html>

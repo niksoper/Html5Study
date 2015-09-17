@@ -22,7 +22,7 @@ h2 + p::after {
 h2 ~ p {
     background-color: yellow;
     border: 2px solid orange;
-    padding: 0.2rem;
+    padding: 1rem 0.2rem 0.2rem 0.2rem;
     border-radius: 0.3rem;
 }
 

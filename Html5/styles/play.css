@@ -14,9 +14,22 @@
 
 body {
     font-family: Verdana, Geneva, sans-serif;
-    padding: 0 .5rem;
+    padding: 0;
+    margin: 0;
     color: #222;
     line-height: 1.3em;
+    background-color: blanchedalmond;
+}
+
+body > h1 {
+    background-color: #42a2ce;
+    color: aliceblue;
+    padding: 1rem;
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
 }
 
 details {
@@ -32,6 +45,7 @@ code {
     padding: .15rem;
     border: 1px solid #9b9a9a;
     border-radius: .2rem;
+    color: #444;
 }
 
 .tag::before {

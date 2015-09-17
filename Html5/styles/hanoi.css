@@ -42,6 +42,7 @@
 #score-container {
     margin: 2rem;
     text-align: center;
+    line-height: normal;
 }
 
 #move-count {

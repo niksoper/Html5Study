@@ -1,10 +1,5 @@
-body {
-    background-color: blanchedalmond;
-}
-
 .left-sidebar {
     float: left;
-    background-color: aqua;
     padding: 0.5rem;
     width: 180px;
     height: 500px;
@@ -12,8 +7,7 @@ body {
     margin-bottom: 3px;
 }
 
-main {
-    background-color: red;    
+main {  
     padding: 6px;
     margin-bottom: 3px;
 }
@@ -33,7 +27,8 @@ main p {
 }
 
 footer {
-    background-color: hotpink;
+    background-color: #42a2ce;
+    color: aliceblue;
     padding: 9px;
     margin-top: 3px
 }
