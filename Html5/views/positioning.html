@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8"></meta>
@@ -34,21 +34,37 @@
             </div>
             <div class="relative">
                 <h1>position: relative;</h1>
+                <div class="positions">
+                    <code>top: 50px; left: 30px;</code>
+                </div>
                 With relative positioning, the element's position is adjusted relative to its static position.
-                This div uses <code>top: 50px; left: 30px;</code>
                 Notice that the content wraps relative to the static position, rather than the relative position.
             </div>
             <div class="absolute">
                 <h1>position: absolute;</h1>
+                <div class="positions">
+                    <code>top: 630px; left: 100px;</code>
+                </div>
                 With absolute positioning, the element's position is not affected by the flow of the document.
                 Instead it will always have the same position relative to the document and it will move when the
-                user scrolls. This div uses <code>top: 630px; left: 100px;</code>
+                user scrolls.
+                <div class="absolute">
+                    <h1>position: absolute;</h1>
+                    <div class="positions">
+                        <code>top: 120px; left: -10px;</code>
+                    </div>
+                    This absolute content is nested within another element with absolute position, so it is positioned
+                    relative to the parent.
+                </div>
             </div>
             <div class="fixed">
                 <h1>position: fixed;</h1>
+                <div class="positions">
+                    <code>top: 465px; left: 200px;</code>
+                </div>
                 With fixed positioning, the element's position is not affected by the flow of the document.
                 Instead it will always have the same position relative to the window and it will not move when the
-                user scrolls. This div uses <code>top: 465px; left: 200px;</code>
+                user scrolls.
             </div>
         </main>
 	</body>

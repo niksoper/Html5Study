@@ -1,4 +1,12 @@
-﻿
+
+.positions {
+    display: block;
+    border: none;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    background-color: inherit;
+}
+
 div > h1 {
     font-size: 1.2rem;
     margin-top: 0;
@@ -20,6 +28,12 @@ div {
     position: absolute;
     top: 630px; 
     left: 100px;
+    background-color: oldlace
+}
+
+.absolute .absolute {
+    top: 120px;
+    left: -10px;
 }
 
 .fixed {
