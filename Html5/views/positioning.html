@@ -12,14 +12,14 @@
         <main>
             <p>
                 There are four different position values that can be applied to any element:
-                <code>static</code>,
-                <code>relative</code>,
-                <code>absolute</code>,
+                <code class="color-static">static</code>,
+                <code class="color-relative">relative</code>,
+                <code class="color-absolute">absolute</code>,
                 and
-                <code>fixed</code>.
+                <code class="color-fixed">fixed</code>.
             </p>
             <p>
-                The default positioning is <code>static</code>, but if any other position
+                The default positioning is <code class="color-static">static</code>, but if any other position
                 value is used then you can adjust the position of the element using one or
                 more of the following properties:
                 <code>top</code>,
@@ -28,11 +28,11 @@
                 and
                 <code>left</code>.
             </p>
-            <div>
+            <div class="color-static">
                 <h1>position: static (default)</h1>
                 Elements with static position are placed in the document based on the flow of the rest of the content.
             </div>
-            <div class="relative">
+            <div class="relative color-relative">
                 <h1>position: relative;</h1>
                 <div class="positions">
                     <code>top: 50px; left: 30px;</code>
@@ -40,7 +40,7 @@
                 With relative positioning, the element's position is adjusted relative to its static position.
                 Notice that the content wraps relative to the static position, rather than the relative position.
             </div>
-            <div class="absolute">
+            <div class="absolute color-absolute">
                 <h1>position: absolute;</h1>
                 <div class="positions">
                     <code>top: 630px; left: 100px;</code>
@@ -48,7 +48,7 @@
                 With absolute positioning, the element's position is not affected by the flow of the document.
                 Instead it will always have the same position relative to the document and it will move when the
                 user scrolls.
-                <div class="absolute">
+                <div class="absolute color-absolute">
                     <h1>position: absolute;</h1>
                     <div class="positions">
                         <code>top: 120px; left: -10px;</code>
@@ -57,7 +57,7 @@
                     relative to the parent.
                 </div>
             </div>
-            <div class="fixed">
+            <div class="fixed color-fixed">
                 <h1>position: fixed;</h1>
                 <div class="positions">
                     <code>top: 465px; left: 200px;</code>

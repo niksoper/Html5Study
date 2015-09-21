@@ -1,3 +1,18 @@
+.color-static {
+    background-color: lemonchiffon;
+}
+
+.color-relative {
+    background-color: khaki;
+}
+
+.color-absolute {
+    background-color: oldlace;
+}
+
+.color-fixed {
+    background-color: orange;
+}
 
 .positions {
     display: block;
@@ -13,7 +28,6 @@ div > h1 {
 }
 
 div {
-    background-color: lemonchiffon;
     border: 1px solid brown;
     padding: 1rem;
 }
@@ -28,7 +42,6 @@ div {
     position: absolute;
     top: 630px; 
     left: 100px;
-    background-color: oldlace
 }
 
 .absolute .absolute {
