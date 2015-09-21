@@ -59,6 +59,7 @@
 
 .recipe-body {
     padding: 10px;
+    font-size: 0.9rem;
 }
 
 .recipe > h1 {
@@ -69,8 +70,30 @@
     margin: 0;
 }
 
-.divide {
-    background-color: #ccc;
-    height: 2px;
-    margin: 0 50px;
+.summary {
+    list-style: none;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.summary li {
+    display: inline-block;
+    background-color: white;
+    color: #888;
+    border: 2px solid #aaa;
+    padding: 4px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin: 5px;
+}
+
+.summary li > i {
+    font-size: 1rem;
+    padding-right: 5px;
+}
+
+.source {
+    clear: both;
+    font-size: 0.8rem;
+    font-style: italic;
 }
