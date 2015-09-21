@@ -1,0 +1,52 @@
+@media (min-width: 768px) {
+    .recipe {
+        float: left;
+        width: 50%;
+    }
+    
+    .contents {
+/*    background-color: red;*/
+        width: 200px;
+        height: 100%;
+        border-right: 2px solid #ccc;
+        position: absolute;
+        top: 52px;
+        padding: 0 10px;
+    }
+    
+    #recipes {
+        margin-left: 210px;
+    }
+}
+
+.contents > h1 {
+    font-size: 1rem;
+}
+
+.contents a {
+    text-decoration: none;
+}
+
+.ingredients {
+/*    background-color: pink;*/
+}
+
+.steps {
+/*    background-color: orange;*/
+}
+
+.recipe {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.recipe > h1 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.divide {
+    background-color: #ccc;
+    height: 2px;
+    margin: 0 50px;
+}
