@@ -1,7 +1,7 @@
-@media (min-width: 768px) {
+@media (min-width: 858px) {
     .recipe {
         float: left;
-        width: 50%;
+        width: 45%;
     }
     
     .contents {
@@ -23,6 +23,15 @@
     font-size: 1rem;
 }
 
+.contents ol {
+    list-style: none;
+    padding: 0;
+}
+
+.contents li {
+    margin: 5px 0;
+}
+
 .contents a {
     text-decoration: none;
 }
@@ -36,13 +45,24 @@
 }
 
 .recipe {
-    margin: 10px 0;
-    padding: 5px;
+    margin: 0;
+/*    padding: 5px;*/
+	background-color: azure;
+	margin: 15px;
+	color: #444;
+	box-shadow: 2px 2px 5px teal;
+}
+
+.recipe-body {
+    padding: 10px;
 }
 
 .recipe > h1 {
+    padding: 10px;
+    background-color: #42a2ce;
+    color: aliceblue;
     font-size: 1.2rem;
-    margin-top: 0;
+    margin: 0;
 }
 
 .divide {
