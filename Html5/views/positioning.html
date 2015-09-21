@@ -43,13 +43,13 @@
             <div class="absolute color-absolute">
                 <h1>position: absolute;</h1>
                 <div class="positions">
-                    <code>top: 630px; left: 100px;</code>
+                    <code>top: 900px; left: 100px;</code>
                 </div>
                 With absolute positioning, the element's position is not affected by the flow of the document.
                 Instead it will always have the same position relative to the document and it will move when the
                 user scrolls.
                 <div class="absolute color-absolute">
-                    <h1>position: absolute;</h1>
+                    <h1>absolute within absolute</h1>
                     <div class="positions">
                         <code>top: 120px; left: -10px;</code>
                     </div>
@@ -65,6 +65,25 @@
                 With fixed positioning, the element's position is not affected by the flow of the document.
                 Instead it will always have the same position relative to the window and it will not move when the
                 user scrolls.
+                <div class="absolute color-absolute">
+                    <h1>absolute within fixed</h1>
+                    <div class="positions">
+                        <code>top: 200px; left: 200px;</code>
+                    </div>
+                    This absolute content is nested within an element with fixed position, so it is positioned
+                    relative to the parent.
+                </div>
+                <div class="color-static">
+                    <h1>static within fixed</h1>
+                    This static content is nested within an element with fixed position.
+                </div>
+                <div class="relative color-relative">
+                    <h1>relative within fixed</h1>
+                    <div class="positions">
+                        <code>top: 50px; left: 30px;</code>
+                    </div>
+                    This relative content is nested within an element with fixed position.
+                </div>
             </div>
         </main>
 	</body>
