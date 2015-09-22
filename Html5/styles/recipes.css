@@ -62,6 +62,12 @@
     font-size: 0.9rem;
 }
 
+.recipe-body img {
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
 .recipe > h1 {
     padding: 10px;
     background-color: #42a2ce;
