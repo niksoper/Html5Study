@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
 
     'use strict';
 
@@ -76,7 +76,7 @@
                 events.push(member.substring(2));
             }
         }
-        return events.filter(e => exceptions.indexOf(e) === -1);
+        return events.filter(function (e) { return exceptions.indexOf(e) === -1});
     }
 
     function handleMessage(msg) {
