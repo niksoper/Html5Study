@@ -18,14 +18,26 @@ body {
     margin: 0;
     color: #222;
     line-height: 1.3em;
-    background-color: blanchedalmond;
+    background-color: #fff9f0;
 }
 
-body > h1 {
+body > header > h1 {
     background-color: #42a2ce;
     color: aliceblue;
     padding: 1rem;
     margin: 0;
+}
+
+.card {
+    background-color: white;
+    padding: 3px;
+    box-shadow: 5px 5px 5px lightgray;
+    border: 1px solid #ececec;
+}
+
+.center {
+    width: 40%;
+    margin: 0 auto;
 }
 
 main {

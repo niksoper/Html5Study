@@ -1,0 +1,24 @@
+.main-menu li {
+    list-style: none;
+    margin: 10px;
+    display: inline-block;
+    background-color: aliceblue;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px #e0e0e0;
+    line-height: 2.5em;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #4D4242;
+    padding: 20px;
+}
+
+.main-menu li:hover {
+    background-color: #42a2ce;
+    box-shadow: 3px 3px 10px #e0e0e0;
+}
+
+.main-menu a:hover {
+    color: aliceblue;
+}
