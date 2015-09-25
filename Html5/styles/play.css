@@ -21,11 +21,28 @@ body {
     background-color: #fff9f0;
 }
 
-body > header > h1 {
+body > header {
     background-color: #42a2ce;
     color: aliceblue;
     padding: 1rem;
     margin: 0;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+    line-height: 1em;
+    vertical-align: middle;
+}
+
+header a {
+    text-decoration: none;
+}
+
+img.home {
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 
 .card {

@@ -68,6 +68,9 @@
   <ItemGroup>
     <Content Include="audio\01-D-Town.mp3" />
     <Content Include="Content\qunit.css" />
+    <Content Include="img\burgers.jpg" />
+    <Content Include="img\html5.png" />
+    <Content Include="img\risotto.jpg" />
     <Content Include="packages.config" />
     <Content Include="scripts\css3.js" />
     <Content Include="scripts\hanoi.js" />
@@ -75,6 +78,7 @@
     <Content Include="styles\css3.css" />
     <Content Include="styles\float.css" />
     <Content Include="styles\hanoi.css" />
+    <Content Include="styles\index.css" />
     <Content Include="styles\layout.css" />
     <Content Include="styles\media.css" />
     <Content Include="styles\recipes.css" />
