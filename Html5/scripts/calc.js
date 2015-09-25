@@ -41,8 +41,8 @@ function handleOperation(buttonId, operation) {
     document.getElementById(buttonId).addEventListener(
         'click',
         function () {
-            let currentResult = Number(txtResult.value)
-            let currentInput = Number(txtInput.value)
+            var currentResult = Number(txtResult.value)
+            var currentInput = Number(txtInput.value)
             txtResult.value = txtResult.value === '' ? currentInput : operation(currentResult, currentInput)
             txtInput.value = ''
         },
@@ -51,12 +51,12 @@ function handleOperation(buttonId, operation) {
 
 function numberClick() {
     txtInput.value = txtInput.value == '0'
-        ? this.innerText
-        : txtInput.value + this.innerText
+        ? this.innerHTML
+        : txtInput.value + this.innerHTML
 }
 
 function handleNumberInputs() {
-    for (let i = 0; i < 10; i++) {
+    for (var i = 0; i < 10; i++) {
         document.getElementById('btn' + i).addEventListener('click', numberClick, false)
     }
 }
