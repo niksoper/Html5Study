@@ -21,6 +21,7 @@ input {
     padding: .5rem;
     font-size: 2rem;
     width: 100%;
+    outline: none;
 }
 
 input:first-of-type {
