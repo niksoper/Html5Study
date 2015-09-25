@@ -11,11 +11,11 @@ function initialize() {
     handleNumberInputs()
     handleClear()
     handleClearEntry()
-    handleOperation('btnPlus', (a, b) => a + b)
-    handleOperation('btnMinus', (a, b) => a - b)
-    handleOperation('btnTimes', (a, b) => a * b)
-    handleOperation('btnDivide', (a, b) => a / b)
-    handleOperation('btnSquare', a => a * a)
+    handleOperation('btnPlus', function(a, b) { return a + b })
+    handleOperation('btnMinus', function(a, b) { return a - b })
+    handleOperation('btnTimes', function(a, b) { return a * b })
+    handleOperation('btnDivide', function(a, b) { return a / b })
+    handleOperation('btnSquare', function(a) { return a * a })
 }
 
 function handleClear() {
