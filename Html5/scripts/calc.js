@@ -45,6 +45,7 @@ function handleOperation(buttonId, operation) {
             var currentInput = Number(txtInput.value)
             txtResult.value = txtResult.value === '' ? currentInput : operation(currentResult, currentInput)
             txtInput.value = ''
+            txtInput.focus()
         },
         false)
 }
@@ -53,6 +54,7 @@ function numberClick() {
     txtInput.value = txtInput.value == '0'
         ? this.innerHTML
         : txtInput.value + this.innerHTML
+    txtInput.focus()
 }
 
 function handleNumberInputs() {
