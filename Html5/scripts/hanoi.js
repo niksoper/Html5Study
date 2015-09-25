@@ -1,4 +1,4 @@
-﻿$().ready(function() {
+$().ready(function() {
 
     'use strict';
 
@@ -11,8 +11,8 @@
         draggableQuery = '[draggable="true"]',
         allDiscsQuery = '.disc',
         sourceElement = null,
-        DISC_HEIGHT = 10,
-        PEG_HEIGHT = 250;
+        DISC_HEIGHT = 20,
+        PEG_HEIGHT = 246;
 
     initWidths();
     setDraggableHandlers();
@@ -137,7 +137,7 @@
     }
 
     function setWidth(disc) {
-        var discWidth = getDiscSize(disc) * 25;
+        var discWidth = getDiscSize(disc) * 50;
         $(disc).width(discWidth + 'px');
     }
 
