@@ -1,0 +1,30 @@
+.horse {
+    margin-top: 15px;
+}
+
+.horse > h1 {
+    text-align: center;
+}
+
+.horse > div {
+    height: 12rem;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 1px black,-3px 3px 1px black,-3px -3px 1px black,3px -3px 1px black;
+    font-family: impact;
+}
+
+#happy {
+    background-image: url(../img/happy-horse.jpg);
+    background-repeat: round;
+}
+
+#long {
+    border-width: 19px 100px 100px 38px;
+    border-style: solid;
+    border-color: transparent;
+    border-image-source: url(../img/long-horse.jpg);
+    border-image-slice: 19 100 100 38 fill;
+    border-image-repeat: stretch;
+}

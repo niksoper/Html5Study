@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Background and Border image</title>
+        <link href="../styles/play.css" rel="stylesheet" />
+        <link href="../styles/bg-border-img.css" rel="stylesheet" />
+	</head>
+	<body>
+        <header>
+            <a href="../../index.html">
+                <img class="home" src="../img/html5.png" alt="HTML5" />
+            </a>
+            <h1>Background and Border image</h1>
+        </header>
+        <main>
+            <section class="card center horse">
+                <h1>Happy Horsey</h1>
+                <ul>
+                    <li><code>background-image: url(../img/happy-horse.jpg);</code></li>
+                    <li><code>background-repeat: round;</code></li>
+                </ul>
+                <div id="happy">
+                    This is one happy horse!
+                </div>
+            </section>
+            <section class="card center horse">
+                <h1>Long Horse</h1>
+                <ul>
+                    <li><code>border-width: 19px 100px 100px 38px;</code></li>
+                    <li><code>border-style: solid;</code></li>
+                    <li><code>border-color: transparent;</code></li>
+                    <li><code>border-image-source: url(../img/long-horse.jpg);</code></li>
+                    <li><code>border-image-slice: 19 100 100 38 fill;</code></li>
+                    <li><code>border-image-repeat: stretch;</code></li>
+                </ul>
+                <div id="long">
+                    What a long horse.
+                </div>
+            </section>
+        </main>
+	</body>
+</html>
