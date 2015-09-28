@@ -136,3 +136,20 @@ a.back {
 .clear {
     clear: both;
 }
+
+figure[data-overlay] {
+    position: relative;
+}
+
+figure[data-overlay]:before {
+    content: attr(data-overlay);
+    position: absolute;
+    font-size: 3rem;
+    font-family: impact;
+    letter-spacing: 0.2rem;
+    top: 30px;
+    left: 50%;
+    color: white;
+    text-shadow: 3px 3px 0 black,-3px 3px 0 black,-3px -3px 0 black, 3px -3px 0 black;
+    letter-spacing: 6px;
+}
