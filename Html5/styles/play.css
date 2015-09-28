@@ -64,6 +64,7 @@ img.home {
 }
 
 .card-menu li {
+    position: relative;
     list-style: none;
     margin: 10px;
     display: inline-block;
@@ -71,6 +72,21 @@ img.home {
     border-radius: 3px;
     box-shadow: 3px 3px 3px #e0e0e0;
     line-height: 2.5em;
+}
+
+.card-menu .badge {
+    position: absolute;
+    right: 0;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 2px;
+    color: #0a380a;
+    background-color: #62ff62;
+    font-size: 0.8rem;
+    transform:  translate3d(30px,-12px, 0) rotate3d(0, 0, 1, 10deg);
+    line-height: 1.1em;
+    font-weight: 600;
+    z-index: 1;
 }
 
 .card-menu a {
