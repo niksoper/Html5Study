@@ -17,19 +17,24 @@
         </header>
         <main>
             <nav class="contents card">
-                <h1>Recipes</h1>
-
-                <ul class="card-menu">
-                    <li><a href="#risotto">Risotto</a></li>
-                    <li><a href="#burgers">Burgers</a></li>
-                    <li><a href="#curry">Curry</a></li>
-                </ul>
+                <header>
+                    <h1>Recipes</h1>
+                </header>
+                <div class="card-body">
+                    <ul class="card-menu">
+                        <li><a href="#risotto">Risotto</a></li>
+                        <li><a href="#burgers">Burgers</a></li>
+                        <li><a href="#curry">Curry</a></li>
+                    </ul>
+                </div>
             </nav>
-            <section id="recipes">
-                <article class="recipe">
-                    <h1 id="risotto">Risotto</h1>
-                    <section class="recipe-body">
-                        <aside class="ingredients">
+            <div id="recipes">
+                <article id="risotto" class="card recipe">
+                    <header>
+                        <h1>Risotto</h1>
+                    </header>
+                    <div class="card-body">
+                        <section class="ingredients">
                             <h1>Ingredients</h1>
                             <table>
                                 <tbody>
@@ -47,7 +52,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </aside>
+                        </section>
 
                         <ul class="summary">
                             <li><i class="fa fa-clock-o"></i>45 mins</li>
@@ -62,15 +67,15 @@
                             <li>Add the stock.</li> 
                             <li>Eat.</li> 
                         </ol>
-                        <div class="clear"></div>
-                    </section>
+                    </div>
                 </article>
 
-                <article class="recipe">
-                    <h1 id="burgers">Burgers</h1>
-                    <section class="recipe-body">
-
-                        <aside class="ingredients">
+                <article id="burgers" class="card recipe">
+                    <header>
+                        <h1>Burgers</h1>
+                    </header>
+                    <div class="card-body">
+                        <section class="ingredients">
                             <h1>Ingredients</h1>
                             <table>
                                 <tbody>
@@ -84,7 +89,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </aside>
+                        </section>
 
                         <ul class="summary">
                             <li><i class="fa fa-clock-o"></i>15 mins</li>
@@ -99,15 +104,16 @@
                             <li>Cook the burgers.</li>
                             <li>Eat them between the baps.</li> 
                         </ol>
-                        <div class="clear"></div>
-                    </section>
+                    </div>
                 </article>
 
-                <article class="recipe">
-                    <h1 id="curry">Curry</h1>
-                    <section class="recipe-body">
+                <article id="curry" class="card recipe">
+                    <header>
+                        <h1>Curry</h1>
+                    </header>
+                    <div class="card-body">
 
-                        <aside class="ingredients">
+                        <section class="ingredients">
                             <h1>Ingredients</h1>
                             <table>
                                 <tbody>
@@ -129,7 +135,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </aside>
+                        </section>
 
                         <ul class="summary">
                             <li><i class="fa fa-clock-o"></i>60 mins</li>
@@ -147,12 +153,11 @@
                             <li>Cook the rice.</li> 
                             <li>Eat it up.</li>
                         </ol>
-                        <div class="clear"></div>
-                    </section>
+                    </div>
                 </article>
                 
                 <p class="source">Source: <a href="#">The top of my head</a></p>        
-            </section>
+            </div>
         </main>
     </body>
 </html>

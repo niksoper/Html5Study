@@ -2,11 +2,7 @@
     margin-top: 15px;
 }
 
-.horse > h1 {
-    text-align: center;
-}
-
-.horse > div {
+.horse .card-body > div {
     height: 12rem;
     padding: 2rem;
     text-align: center;

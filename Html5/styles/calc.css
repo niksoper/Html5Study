@@ -1,11 +1,15 @@
+#calc {
+    width: 340px;
+    background-color: #3E43A8;
+}
+
 main h1 {
     font-size: 1.5rem;
     text-align: center;
 }
 
 .display {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .buttons {

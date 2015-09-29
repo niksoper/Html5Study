@@ -1,0 +1,23 @@
+#rainbow {
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+    background-image: 
+        linear-gradient(
+            to top,
+            red 15%,
+            red 15%,
+            yellow 15%,
+            yellow 30%,
+            pink 30%,
+            pink 45%,
+            green 45%,
+            green 60%,
+            orange 60%,
+            orange 75%,
+            purple 75%,
+            purple 90%,
+            blue 90%,
+            blue 100%
+        );
+}

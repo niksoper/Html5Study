@@ -10,7 +10,7 @@
         border-right: 2px solid #ccc;
         position: absolute;
         top: 80px;
-        padding: 0 10px;
+/*        padding: 0 10px;*/
     }
     
     #recipes {
@@ -57,18 +57,18 @@
 	box-shadow: 2px 2px 5px teal;
 }
 
-.recipe-body {
+.recipe .card-body {
     padding: 10px;
     font-size: 0.9rem;
 }
 
-.recipe-body img {
+.card-body img {
     width: 60%;
     margin: 0 auto;
     padding: 5px;
 }
 
-.recipe > h1 {
+.recipe > header > h1 {
     padding: 10px;
     background-color: #42a2ce;
     color: aliceblue;

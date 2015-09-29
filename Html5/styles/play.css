@@ -45,19 +45,38 @@ img.home {
     vertical-align: middle;
 }
 
-.card {
-    background-color: white;
-    padding: 3px;
-    box-shadow: 5px 5px 5px lightgray;
-    border: 1px solid #ececec;
-}
-
 @media (min-width: 600px) {
     .center {
         width: 50%;
-        margin: 0 auto;
+        margin: inherit auto;
     }
-} 
+}
+
+.card {
+    background-color: white;
+    box-shadow: 5px 5px 5px lightgray;
+    border: 1px solid #ececec;
+    margin: 10px 0;
+    max-width: 800px;
+}
+
+.card.center {
+    margin: 10px auto;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card > header {
+    background-color: #42a2ce;
+    color: aliceblue;
+}
+
+.card > header h1 {
+    margin: 0;
+    padding: 0.8rem;
+}
 
 .card-menu {
     padding: 0 20px;
@@ -126,6 +145,7 @@ code {
     border: 1px solid #9b9a9a;
     border-radius: .2rem;
     color: #444;
+    white-space: pre;
 }
 
 .tag::before {

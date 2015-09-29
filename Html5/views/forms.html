@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8"></meta>
@@ -15,42 +15,48 @@
             <h1>Getting started with HTML5</h1>		
         </header>
 		<main>
-            <h2>Form validation</h2>
-            <form novalidate>
+            <article class="card center">
+                <header>
+                    <h1>Form validation</h1>
+                </header>
+                <div class="card-body">
+                    <form novalidate>
 
-                <fieldset>
-                    <legend>Stupid Form</legend>
+                        <fieldset>
+                            <legend>Stupid Form</legend>
 
-                    <label for="username">
-                        <span>Username</span>
-                        <input type="text" required />
-                        <div class="invalid">
-                            Username is required
-                        </div>
-                    </label>
+                            <label for="username">
+                                <span>Username</span>
+                                <input type="text" required />
+                                <div class="invalid">
+                                    Username is required
+                                </div>
+                            </label>
 
-                    <label for="username">
-                        <span>Favourite food</span>
-                        <input type="text" list="foods" />
-                    </label>
-                    <datalist id="foods">
-                        <option value="Pizza" />
-                        <option value="Crisps" />
-                        <option value="Hair" />
-                    </datalist>
+                            <label for="username">
+                                <span>Favourite food</span>
+                                <input type="text" list="foods" />
+                            </label>
+                            <datalist id="foods">
+                                <option value="Pizza" />
+                                <option value="Crisps" />
+                                <option value="Hair" />
+                            </datalist>
 
-                    <label>
-                        <span>Gender</span>
-                        <select>
-                            <option value="M">Male</option>
-                            <option value="F">Female</option>
-                        </select>
-                    </label>
+                            <label>
+                                <span>Gender</span>
+                                <select>
+                                    <option value="M">Male</option>
+                                    <option value="F">Female</option>
+                                </select>
+                            </label>
 
-                    <button type="submit">OK</button>
-                </fieldset>
+                            <button type="submit">OK</button>
+                        </fieldset>
 
-            </form>
+                    </form>
+                </div>
+            </article>
         </main>
 
         <script src="../scripts/events.js"></script>

@@ -16,57 +16,65 @@
         <h1>Playing with CSS3</h1>
     </header>
     <main>
-        <section class="playarea">
+        <div class="card center playarea">
             <label>
                 Try a selector:
                 <input id="selectorInput" type="search" placeholder="a[href*=wiki]" />
             </label>
-        </section>
+        </div>
 
-        <section>
-            <p>Some noteworthy CSS on this page:</p>
-            <code>.para p::first-letter</code>
-            <code>h2 + p::after</code>
-            <code>h2 ~ p</code>
-            <code>.links a[href]:hover</code>
-            <code>.links a[href]:hover:after</code>
-            <p>
-                <span class="tip">
-                    <i class="fa fa-lightbulb-o"></i>
-                    You can hover over a snippet to see what it selects but unfortunately
-                    the psuedo-selectors don't work with document.querySelectorAll().
-                </span>
-            </p>
-        </section>
+        <div class="card center">
+            <div class="card-body">
+                <p>Some noteworthy CSS on this page:</p>
+                <code>.para p::first-letter</code>
+                <code>h2 + p::after</code>
+                <code>h2 ~ p</code>
+                <code>.links a[href]:hover</code>
+                <code>.links a[href]:hover:after</code>
+                <p>
+                    <span class="tip">
+                        <i class="fa fa-lightbulb-o"></i>
+                        You can hover over a snippet to see what it selects but unfortunately
+                        the psuedo-selectors don't work with document.querySelectorAll().
+                    </span>
+                </p>
+            </div>
+        </div>
 
-        <section class="para">
-            <h2 class="typed">Here come the Alans</h2>
-            <p>alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan </p>
-            <h3>and some horses</h3>
-            <p>horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse </p>
-        </section>
+        <div class=" card center">
+            <div class="card-body">
+                <h2 class="typed">Here come the Alans</h2>
+                <p>alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan alan </p>
+                <h3>and some horses</h3>
+                <p>horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse horse </p>
+            </div>
+        </div>
 
-        <section class="links" draggable="true">
-            <a>Most</a>
-            <a href="http://dictionary.reference.com/">words</a>
-            <a>in</a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this">this</a>
-            <a href="https://www.google.co.uk/search?q=define:+sentence&ie=utf-8&oe=utf-8&gws_rd=cr&ei=Jy74VbCPIaOE7gbBtIngCQ">sentence</a>
-            <a>are</a>
-            <a href="https://en.wikipedia.org/wiki/Lynx">links.</a>
-            <span class="tip"><i class="fa fa-lightbulb-o"></i>Maybe approach from the bottom</span>
-        </section>
+        <div class="card center">
+            <div class="card-body links">
+                <a>Some</a>
+                <a href="http://dictionary.reference.com/">words</a>
+                <a>in</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this">this</a>
+                <a href="https://www.google.co.uk/search?q=define:+sentence&ie=utf-8&oe=utf-8&gws_rd=cr&ei=Jy74VbCPIaOE7gbBtIngCQ">sentence</a>
+                <a>are</a>
+                <a href="https://en.wikipedia.org/wiki/Lynx">links.</a>
+                <span class="tip"><i class="fa fa-lightbulb-o"></i>Maybe approach from the bottom</span>
+            </div>
+        </div>
 
-        <section>
-            <span data-label="Les">The</span>
-            <span data-label="mots">words</span>
-            <span data-label="de">in</span>
-            <span data-label="cette">this</span>
-            <span data-label="phrase">sentence</span>
-            <span data-label="sont">are</span>
-            <span data-label="étiquetés">labelled.</span>
-            <span class="tip"><i class="fa fa-lightbulb-o"></i>Try hovering</span>
-        </section>
+        <div class="card center">
+            <div class="card-body">
+                <span data-label="Les">The</span>
+                <span data-label="mots">words</span>
+                <span data-label="de">in</span>
+                <span data-label="cette">this</span>
+                <span data-label="phrase">sentence</span>
+                <span data-label="sont">are</span>
+                <span data-label="étiquetés">labelled.</span>
+                <span class="tip"><i class="fa fa-lightbulb-o"></i>Try hovering</span>
+            </div>
+        </div>
         
         <script src="../scripts/css3.js"></script>
     </main>
