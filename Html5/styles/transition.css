@@ -1,0 +1,35 @@
+.horse {
+    background-color: saddlebrown;
+    width: 20px;
+    height: 20px;
+    transition: all 100ms;
+    animation-name: horse;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+}
+
+/*
+.animate {
+    animation-name: horse;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+*/
+
+@keyframes horse {
+    40% {
+        transform: rotate(12deg);
+    }
+    60% {
+        transform: rotate(12deg) translate(100px, 100px);
+    }
+    80% {
+        transform: rotate(12deg) translate(100px, 100px) scale(6);
+    }
+    100% {
+        transform: rotate(12deg) translate(100px, 100px) scale(6);
+        background-image: url(../img/happy-horse.jpg);
+        background-repeat: round;
+    }
+}
