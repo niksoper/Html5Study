@@ -1,0 +1,122 @@
+.board {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    background-image:
+        linear-gradient(
+            to right,
+            transparent 0%,
+            transparent 32.5%,
+            #2c2424 32.5%,
+            #2c2424 33.5%,
+            transparent 33.5%,
+            transparent 65.5%,
+            #2c2424 65.5%,
+            #2c2424 66.5%,
+            transparent 66.5%
+        ),
+        linear-gradient(
+            to top,
+            transparent 0%,
+            transparent 32.5%,
+            #2c2424 32.5%,
+            #2c2424 33.5%,
+            transparent 33.5%,
+            transparent 65.5%,
+            #2c2424 65.5%,
+            #2c2424 66.5%,
+            transparent 66.5%
+        )
+}
+
+.board > div {
+    cursor: default;
+}
+
+.board > div:not(.message) {
+    width: 30%;
+    height: 30%;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+}
+
+.board > div:not(.taken):hover:before {
+    content: attr(data-turn);
+    color: hsl(260, 70%, 95%);
+}
+
+.board > .taken {
+}
+
+.taken.X {
+    color: hsl(245, 74%, 61%);
+}
+
+.taken.O {
+    color: hsl(65, 74%, 61%);
+}
+
+.message {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 15px;
+    text-align: center;
+    font-size: 3rem;
+    display: none;
+}
+
+.message.show {
+    display: block;
+}
+
+.X:nth-child(1) + .X + .X ~ .message.win-X,
+.X:nth-child(4) + .X + .X ~ .message.win-X,
+.X:nth-child(7) + .X + .X ~ .message.win-X,
+.X:nth-child(1) ~ .X:nth-child(4) ~ .X:nth-child(7) ~ .message.win-X,
+.X:nth-child(2) ~ .X:nth-child(5) ~ .X:nth-child(8) ~ .message.win-X,
+.X:nth-child(3) ~ .X:nth-child(6) ~ .X:nth-child(9) ~ .message.win-X,
+.X:nth-child(1) ~ .X:nth-child(5) ~ .X:nth-child(9) ~ .message.win-X,
+.X:nth-child(3) ~ .X:nth-child(5) ~ .X:nth-child(7) ~ .message.win-X {
+    display: block;
+}
+
+.O:nth-child(1) + .O + .O ~ .message.win-O,
+.O:nth-child(4) + .O + .O ~ .message.win-O,
+.O:nth-child(7) + .O + .O ~ .message.win-O,
+.O:nth-child(1) ~ .O:nth-child(4) ~ .O:nth-child(7) ~ .message.win-O,
+.O:nth-child(2) ~ .O:nth-child(5) ~ .O:nth-child(8) ~ .message.win-O,
+.O:nth-child(3) ~ .O:nth-child(6) ~ .O:nth-child(9) ~ .message.win-O,
+.O:nth-child(1) ~ .O:nth-child(5) ~ .O:nth-child(9) ~ .message.win-O,
+.O:nth-child(3) ~ .O:nth-child(5) ~ .O:nth-child(7) ~ .message.win-O {
+    display: block;
+}
+
+.taken + .taken + .taken + .taken + .taken + .taken + .taken + .taken + .taken ~ .draw {
+    display: block;
+}
+
+#draw {
+    display: block;
+    background-color: #ccc;
+}
+
+#win-X {
+    display: block;
+    background-color: hsl(245, 74%, 61%);
+    color: hsl(65, 74%, 61%);
+}
+
+#win-O {
+    display: block;
+    background-color: hsl(65, 74%, 61%);
+    color: hsl(245, 74%, 61%);
+}
