@@ -3,7 +3,7 @@
     'use strict';
     
     var turn = 'X',
-        cells = $('.board > div:not(.message)');
+        cells = $('.board > i:not(.message)');
     
     cells.click(function() {
         var cell = $(this);
@@ -17,8 +17,6 @@
         cell.addClass(turn);
         
         turn = turn === 'X' ? 'O' : 'X';
-        
-        checkEnd();
     });
     
     cells.mouseover(function() {
@@ -28,10 +26,5 @@
     cells.mouseout(function() {
         $(this).removeAttr('data-turn');
     });
-    
-    function checkEnd() {
-        var first = $('.board > div:nth-child(1)');
-        console.log('First cell: ' + first.text())
-    }
     
 })();

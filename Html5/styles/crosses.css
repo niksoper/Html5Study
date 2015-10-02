@@ -1,6 +1,5 @@
 .board {
     width: 300px;
-    height: 300px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -8,6 +7,8 @@
     justify-content: center;
     align-items: center;
     -webkit-user-select: none;
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
     background-image:
         linear-gradient(
             to right,
@@ -35,26 +36,26 @@
         )
 }
 
-.board > div {
-    cursor: default;
-}
-
-.board > div:not(.message) {
-    width: 30%;
-    height: 30%;
+.board > i {
+    width: 90px;
+    height: 90px;
     margin: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 100px;
+    cursor: default;
+    font-style: normal;
 }
 
-.board > div:not(.taken):hover:before {
+.board > i[data-turn="X"]:not(.taken):before {
     content: attr(data-turn);
-    color: hsl(260, 70%, 95%);
+    color: hsl(245, 74%, 90%);
 }
 
-.board > .taken {
+.board > i[data-turn="O"]:not(.taken):before {
+    content: attr(data-turn);
+    color: hsl(65, 74%, 90%);
 }
 
 .taken.X {
@@ -66,16 +67,13 @@
 }
 
 .message {
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin: 15px;
+    margin: 30px 0;
     text-align: center;
     font-size: 3rem;
     display: none;
-}
-
-.message.show {
-    display: block;
 }
 
 .X:nth-child(1) + .X + .X ~ .message.win-X,
@@ -87,6 +85,8 @@
 .X:nth-child(1) ~ .X:nth-child(5) ~ .X:nth-child(9) ~ .message.win-X,
 .X:nth-child(3) ~ .X:nth-child(5) ~ .X:nth-child(7) ~ .message.win-X {
     display: block;
+    background-color: hsl(245, 74%, 61%);
+    color: hsl(65, 74%, 61%);
 }
 
 .O:nth-child(1) + .O + .O ~ .message.win-O,
@@ -98,25 +98,11 @@
 .O:nth-child(1) ~ .O:nth-child(5) ~ .O:nth-child(9) ~ .message.win-O,
 .O:nth-child(3) ~ .O:nth-child(5) ~ .O:nth-child(7) ~ .message.win-O {
     display: block;
+    background-color: hsl(65, 74%, 61%);
+    color: hsl(245, 74%, 61%);
 }
 
 .taken + .taken + .taken + .taken + .taken + .taken + .taken + .taken + .taken ~ .draw {
     display: block;
-}
-
-#draw {
-    display: block;
     background-color: #ccc;
-}
-
-#win-X {
-    display: block;
-    background-color: hsl(245, 74%, 61%);
-    color: hsl(65, 74%, 61%);
-}
-
-#win-O {
-    display: block;
-    background-color: hsl(65, 74%, 61%);
-    color: hsl(245, 74%, 61%);
 }
