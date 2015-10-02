@@ -27,6 +27,15 @@ main > footer > h1 {
     font-size: 2rem;
 }
 
+.content p {
+    -webkit-column-count: 2;
+    -webkit-column-width: 200px;
+    -moz-column-count: 2;
+    -moz-column-width: 200px;
+    column-count: 2;
+    column-width: 200px;
+}
+
 .sidebar > h1 {
     font-size: 1.5rem;
 }
