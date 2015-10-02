@@ -70,36 +70,58 @@
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin: 30px 0;
+    margin-top: 30px;
     text-align: center;
     font-size: 3rem;
     display: none;
 }
 
-.X:nth-child(1) + .X + .X ~ .message.win-X,
-.X:nth-child(4) + .X + .X ~ .message.win-X,
-.X:nth-child(7) + .X + .X ~ .message.win-X,
-.X:nth-child(1) ~ .X:nth-child(4) ~ .X:nth-child(7) ~ .message.win-X,
-.X:nth-child(2) ~ .X:nth-child(5) ~ .X:nth-child(8) ~ .message.win-X,
-.X:nth-child(3) ~ .X:nth-child(6) ~ .X:nth-child(9) ~ .message.win-X,
-.X:nth-child(1) ~ .X:nth-child(5) ~ .X:nth-child(9) ~ .message.win-X,
-.X:nth-child(3) ~ .X:nth-child(5) ~ .X:nth-child(7) ~ .message.win-X {
+.X:nth-child(1) + .X + .X ~ .win-X,
+.X:nth-child(4) + .X + .X ~ .win-X,
+.X:nth-child(7) + .X + .X ~ .win-X,
+.X:nth-child(1) ~ .X:nth-child(4) ~ .X:nth-child(7) ~ .win-X,
+.X:nth-child(2) ~ .X:nth-child(5) ~ .X:nth-child(8) ~ .win-X,
+.X:nth-child(3) ~ .X:nth-child(6) ~ .X:nth-child(9) ~ .win-X,
+.X:nth-child(1) ~ .X:nth-child(5) ~ .X:nth-child(9) ~ .win-X,
+.X:nth-child(3) ~ .X:nth-child(5) ~ .X:nth-child(7) ~ .win-X {
     display: block;
     background-color: hsl(245, 74%, 61%);
     color: hsl(65, 74%, 61%);
 }
 
-.O:nth-child(1) + .O + .O ~ .message.win-O,
-.O:nth-child(4) + .O + .O ~ .message.win-O,
-.O:nth-child(7) + .O + .O ~ .message.win-O,
-.O:nth-child(1) ~ .O:nth-child(4) ~ .O:nth-child(7) ~ .message.win-O,
-.O:nth-child(2) ~ .O:nth-child(5) ~ .O:nth-child(8) ~ .message.win-O,
-.O:nth-child(3) ~ .O:nth-child(6) ~ .O:nth-child(9) ~ .message.win-O,
-.O:nth-child(1) ~ .O:nth-child(5) ~ .O:nth-child(9) ~ .message.win-O,
-.O:nth-child(3) ~ .O:nth-child(5) ~ .O:nth-child(7) ~ .message.win-O {
+.O:nth-child(1) + .O + .O ~ .win-O,
+.O:nth-child(4) + .O + .O ~ .win-O,
+.O:nth-child(7) + .O + .O ~ .win-O,
+.O:nth-child(1) ~ .O:nth-child(4) ~ .O:nth-child(7) ~ .win-O,
+.O:nth-child(2) ~ .O:nth-child(5) ~ .O:nth-child(8) ~ .win-O,
+.O:nth-child(3) ~ .O:nth-child(6) ~ .O:nth-child(9) ~ .win-O,
+.O:nth-child(1) ~ .O:nth-child(5) ~ .O:nth-child(9) ~ .win-O,
+.O:nth-child(3) ~ .O:nth-child(5) ~ .O:nth-child(7) ~ .win-O {
     display: block;
     background-color: hsl(65, 74%, 61%);
     color: hsl(245, 74%, 61%);
+}
+
+.X:nth-child(1) + .X + .X ~ .draw,
+.X:nth-child(4) + .X + .X ~ .draw,
+.X:nth-child(7) + .X + .X ~ .draw,
+.X:nth-child(1) ~ .X:nth-child(4) ~ .X:nth-child(7) ~ .draw,
+.X:nth-child(2) ~ .X:nth-child(5) ~ .X:nth-child(8) ~ .draw,
+.X:nth-child(3) ~ .X:nth-child(6) ~ .X:nth-child(9) ~ .draw,
+.X:nth-child(1) ~ .X:nth-child(5) ~ .X:nth-child(9) ~ .draw,
+.X:nth-child(3) ~ .X:nth-child(5) ~ .X:nth-child(7) ~ .draw {
+    display: none !important;
+}
+
+.O:nth-child(1) + .O + .O ~ .draw,
+.O:nth-child(4) + .O + .O ~ .draw,
+.O:nth-child(7) + .O + .O ~ .draw,
+.O:nth-child(1) ~ .O:nth-child(4) ~ .O:nth-child(7) ~ .draw,
+.O:nth-child(2) ~ .O:nth-child(5) ~ .O:nth-child(8) ~ .draw,
+.O:nth-child(3) ~ .O:nth-child(6) ~ .O:nth-child(9) ~ .draw,
+.O:nth-child(1) ~ .O:nth-child(5) ~ .O:nth-child(9) ~ .draw,
+.O:nth-child(3) ~ .O:nth-child(5) ~ .O:nth-child(7) ~ .draw {
+    display: none !important;
 }
 
 .taken + .taken + .taken + .taken + .taken + .taken + .taken + .taken + .taken ~ .draw {
