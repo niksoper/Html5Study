@@ -56,8 +56,8 @@ img.home {
     background-color: white;
     box-shadow: 5px 5px 5px lightgray;
     border: 1px solid #ececec;
-    margin: 10px 0;
-    max-width: 800px;
+    margin: 5px;
+/*    max-width: 800px;*/
 }
 
 .card.center {

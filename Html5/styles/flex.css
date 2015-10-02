@@ -1,0 +1,57 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p:first-letter {
+    text-transform: uppercase;
+}
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+    flex: 100%;
+}
+
+main h1 {
+    margin: 10px
+}
+
+main > header > h1,
+main > footer > h1 {
+    font-size: 1rem;
+}
+
+.content > h1 {
+    font-size: 2rem;
+}
+
+.sidebar > h1 {
+    font-size: 1.5rem;
+}
+
+.content,
+.sidebar {
+    padding: 15px;
+}
+
+@media (min-width: 820px) {
+    .sidebar {
+        flex: 2;
+    }
+
+    .content {
+        flex: 5;
+    }
+}
+
+@media (max-width: 819px) {
+    main {
+        flex-direction: column;
+    }
+    
+    .big {
+        display: none;
+    }
+}
