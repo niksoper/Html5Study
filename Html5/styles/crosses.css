@@ -36,7 +36,7 @@
         )
 }
 
-.board > i {
+.board > .cell {
     width: 90px;
     height: 90px;
     margin: 3px;
@@ -48,12 +48,12 @@
     font-style: normal;
 }
 
-.board > i[data-turn="X"]:not(.taken):before {
+.board > .cell[data-turn="X"]:not(.taken):before {
     content: attr(data-turn);
     color: hsl(245, 74%, 90%);
 }
 
-.board > i[data-turn="O"]:not(.taken):before {
+.board > .cell[data-turn="O"]:not(.taken):before {
     content: attr(data-turn);
     color: hsl(65, 74%, 90%);
 }

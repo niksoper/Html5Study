@@ -3,7 +3,7 @@
     'use strict';
     
     var turn = 'X',
-        cells = $('.board > i:not(.message)');
+        cells = $('.board > .cell');
     
     cells.click(function() {
         var cell = $(this);
