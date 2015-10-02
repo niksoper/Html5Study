@@ -37,8 +37,8 @@
 }
 
 .board > .cell {
-    width: 90px;
-    height: 90px;
+    width: 93px;
+    height: 93px;
     margin: 3px;
     display: flex;
     align-items: center;
