@@ -148,12 +148,20 @@ code {
     white-space: pre;
 }
 
-.tag::before {
+.tag {
+    font-family: monospace;
+}
+
+.tag:before {
     content: '<';
 }
 
 .tag:after {
     content: '>';
+}
+
+.tag.null:after {
+    content: ' />';
 }
 
 summary {
@@ -188,4 +196,8 @@ figure[data-overlay]:before {
     color: white;
     text-shadow: 3px 3px 0 black,-3px 3px 0 black,-3px -3px 0 black, 3px -3px 0 black;
     letter-spacing: 6px;
+}
+
+.scroll {
+    overflow: auto;
 }

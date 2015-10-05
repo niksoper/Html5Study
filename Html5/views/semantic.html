@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Semantic markup</title> 
+        <link href="../styles/play.css" rel="stylesheet" />
+        <link href="../styles/semantic.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	</head>
+	<body>     
+        <header>
+            <a href="../../index.html">
+                <img class="home" src="../img/html5.png" alt="HTML5" />
+            </a>
+            <h1>Semantic markup</h1>
+        </header>
+
+        <div class="controls">
+            <label>
+                <input type="checkbox" id="toggle-outline" />
+                Outlining
+            </label>
+        </div>
+        
+        <nav class="clear" data-outline="nav">
+            <ul>
+                <li><a href="Html5/views/crosses.html">Noughts and Crosses</a></li>
+                <li><a href="Html5/views/flex.html">Flexbox</a></li>
+                <li><a href="Html5/views/float.html">Floating and clearing</a></li>
+                <li><a href="Html5/views/calculator.html">JS Calculator</a></li>
+                <li><a href="Html5/views/positioning.html">Positioning</a></li>
+                <li><a href="Html5/views/recipes.html">Recipes</a></li>
+                <li><a href="Html5/views/hanoi.html">Tower of Hanoi</a></li>
+            </ul>
+            <p>A <code class="nav">nav</code> is only needed for major site navigation. 
+                There can be many <code class="tag">nav</code> elements on one page, but they should 
+                not be used for external links or secondary areas of the site.</p>
+        </nav>
+        
+        <main data-outline="main">
+            <header data-outline="header">
+                <hgroup>
+                    <h1><code class="tag">h1</code> The main heading</h1>
+                    <h2><code class="tag">h2</code> A sub-heading</h2>
+                </hgroup>
+                <p>This <code class="tag">header</code> uses an <code class="tag">hgroup</code> for 
+                    a main and sub-heading. There is no need to use a <code class="tag">header</code> 
+                    if all you need is an <code class="tag">hn</code>.</p>
+                <p>A <code class="tag">header</code> can be included in any container element 
+                    e.g. <code class="tag">body</code>, 
+                    <code class="tag">main</code>, 
+                    <code class="tag">section</code>, 
+                    <code class="tag">article</code>&hellip;</p>
+            </header>
+            
+           
+            <aside data-outline="aside">
+                <p>An <code class="tag">aside</code> is used for stand-alone tangential content. 
+                    e.g. advertising.</p>
+                <p>The best online resource for all of this stuff is 
+                    <a href="http://html5doctor.com/#glossary" target="_blank">HTML5 Doctor</a></p>
+            </aside>
+
+            <h3>Main content</h3>
+            <p>This paragraph is a child of <code class="tag">main</code>. 
+                The <code class="tag">main</code> content should not include any content that 
+                is repeated across pages (e.g. menus/site navigation).</p>
+                
+            <p></p>
+            
+            <section data-outline="section">
+                <h1>Section content</h1>
+                <p>Sections should always have a heading and should be used for a thematic 
+                    grouping of content.</p>
+            </section>
+            
+            <section id="stressing" data-outline="section">
+                <h1>Stressing parts of text</h1>
+                <dl data-outline="dl">
+                    <dt><dfn><code class="tag">b</code></dfn></dt>
+                    <dd>Highlighting <b>keywords</b>.</dd>
+                    <dt><dfn><code class="tag">strong</code></dfn></dt>
+                    <dd>Indicating importance. e.g. Turn <strong>right</strong> at the next junction.</dd>
+                    <dt><dfn><code class="tag">em</code></dfn></dt>
+                    <dd>For words that would be pronounced with emphasis
+                        if read aloud. e.g. <q>I am <em>very</em> unhappy with your behaviour!</q></dd>
+                    <dt><dfn><code class="tag">i</code></dfn></dt>
+                    <dd>For an <em>alternate voice or mood</em>. e.g. stage directions.
+                        Difficult to come up with a compelling use but see
+                        <a href="http://html5doctor.com/i-b-em-strong-element/#element-i" target="_blank">HTML5 Doctor</a>
+                        for more information.
+                    </dd>
+                </dl>
+            </section>
+            
+            <section data-outline="section">
+                <h1>Quotations</h1>
+                <p>Use <code class="tag">blockquote</code> for a long running quotation or 
+                    <code class="tag">q</code> for inline quotations.</p>
+                
+                <blockquote data-outline="blockquote">
+                    <p>I am in blood stepped in so far that should I wade no more, 
+                        Returning were as tedious as go o’er</p>
+                    <footer>
+                        <p>
+                            by William Shakespeare,
+                            <cite>Macbeth</cite> Act 3, Scene 4
+                        </p>
+                    </footer>
+                </blockquote>
+                
+                <p>The above <code class="tag">blockquote</code> uses <code class="tag">cite</code>
+                    to reference the name of the quoted work <strong>not the author</strong>.
+                </p>
+                
+                <p>Inline quote: <q cite="Fawlty Towers">Ooh, I know</q>.
+                    The browser adds the quotes in the previous sentence.
+                    You can also use cite inline: <code class="tag">q cite="quoted-work"</code>.</p>
+                
+            </section>
+            
+            <section id="code-samp-var" data-outline="section">
+                <h1>Code / Samp / Pre / Var</h1>
+                <dl data-outline="dl">
+                    <dt><dfn><code class="tag">code</code></dfn></dt>
+                    <dd>All code samples.</dd>
+                    <dd class="example"><code>let sayHello target = printfn "Hello %s" target</code></dd>
+                    <dt><dfn><code class="tag">samp</code></dfn></dt>
+                    <dd>Sample output.</dd>
+                    <dd class="example"><samp>Hello World!</samp></dd>
+                    <dt><dfn><code class="tag">pre</code></dfn></dt>
+                    <dd>Pre-formatted text (whitespace is preserved).</dd>
+                    <dd class="example"> 
+<pre>lots   of       spaces
+and
+  line
+  breaks
+</pre></dd>
+                    <dt><dfn><code class="tag">var</code></dfn></dt>
+                    <dd>A variable in a mathematical equation.</dd>
+                    <dd class="example"><var>v</var> = <var>u</var>+<var>a</var><var>t</var></dd>
+                </dl>
+            </section>
+            
+            <section data-outline="section">
+                <h1>Breaks</h1>
+                <h2>Line break</h2>
+                <p>The <code class="null tag">br</code><br />tag<br />adds<br />an<br />immediate<br />line break.</p>
+                <h2>Word break</h2>
+                <p class="scroll">Thisisonemassivewordsoitquicklybecomestoolongtofitinsidehteavailablespaceandendsupgoingofftheedgeofthescreenwithascrollbarbydefault</p>
+                <p class="scroll">If<wbr />you<wbr />wrote<wbr />a<wbr />really<wbr />long<wbr />and<wbr />rambling<wbr />word<wbr />(or<wbr />sentence)<wbr />that<wbr />had<wbr />no<wbr />spaces<wbr />in<wbr />it<wbr />or<wbr />not<wbr />enough<wbr />spaces<wbr />to<wbr />allow<wbr />the<wbr />text<wbr />to<wbr />wrap<wbr />then<wbr />you<wbr />could<wbr />add<wbr />some<wbr /><code class="tag null">wbr</code><wbr />tags<wbr />in<wbr />order<wbr />to<wbr />let<wbr />the<wbr />text<wbr />break<wbr />in<wbr />certain<wbr />places.</p>
+            </section>
+            
+            <section data-outline="section">
+                <h1>Definitions and descriptions</h1>
+                <h2>Description lists</h2>
+                <p>A <code class="tag">dl</code> tag is used to create descriptions for terms.
+                    The relationship between terms and descriptions is <strong>many to many</strong>
+                    so a term can have more than one description and descriptions can relate to more
+                    than one term.
+                </p>
+                <p>See <a href="#stressing">Stressing parts of text</a> and 
+                    <a href="#code-samp-var">Code / Samp / Pre / Var</a> for example uses.
+                </p>
+                <h2>Definitions</h2>
+                <p>
+                    A <code class="tag">dfn</code> tag represents the defining instance of a term.
+                    There are a few used on this page&hellip;
+                </p>
+                <p>
+                    They are often coupled with 
+                    <code class="tag">attr</code> tags to define attributes.
+                </p>
+            </section>
+
+            <footer data-outline="footer">
+                <p>This is the <code class="tag">footer</code> for the 
+                    <code class="tag">main</code> content.</p>
+            </footer>
+        </main>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="../scripts/semantic.js"></script>
+	</body>
+</html>
