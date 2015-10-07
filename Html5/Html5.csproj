@@ -69,19 +69,30 @@
     <Content Include="audio\01-D-Town.mp3" />
     <Content Include="Content\qunit.css" />
     <Content Include="img\burgers.jpg" />
+    <Content Include="img\curry.jpg" />
+    <Content Include="img\happy-horse.jpg" />
     <Content Include="img\html5.png" />
+    <Content Include="img\long-horse.jpg" />
     <Content Include="img\risotto.jpg" />
     <Content Include="packages.config" />
+    <Content Include="scripts\crosses.js" />
     <Content Include="scripts\css3.js" />
     <Content Include="scripts\hanoi.js" />
     <Content Include="scripts\media.js" />
+    <Content Include="scripts\semantic.js" />
+    <Content Include="scripts\transition.js" />
+    <Content Include="styles\bg-border-img.css" />
+    <Content Include="styles\crosses.css" />
     <Content Include="styles\css3.css" />
+    <Content Include="styles\flex.css" />
     <Content Include="styles\float.css" />
+    <Content Include="styles\gradients.css" />
     <Content Include="styles\hanoi.css" />
-    <Content Include="styles\index.css" />
     <Content Include="styles\layout.css" />
     <Content Include="styles\media.css" />
     <Content Include="styles\recipes.css" />
+    <Content Include="styles\semantic.css" />
+    <Content Include="styles\transition.css" />
     <Content Include="video\tv.ogv" />
     <Content Include="video\tv.webm" />
     <Content Include="video\walk.m4v" />
@@ -108,7 +119,11 @@
     <Content Include="video\walk.mp4" />
     <Content Include="video\scratch.m4v" />
     <Content Include="video\scratch.mp4" />
+    <Content Include="views\bg-border-img.html" />
+    <Content Include="views\crosses.html" />
     <Content Include="views\css3.html" />
+    <Content Include="views\flex.html" />
+    <Content Include="views\gradients.html" />
     <Content Include="views\hanoi.html" />
     <Content Include="views\float.html" />
     <Content Include="views\positioning.html" />
@@ -125,6 +140,8 @@
     <Content Include="styles\play.css" />
     <Content Include="views\play.html" />
     <Content Include="views\recipes.html" />
+    <Content Include="views\semantic.html" />
+    <Content Include="views\transition.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
