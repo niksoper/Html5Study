@@ -20,7 +20,7 @@
                     <h1>Form validation</h1>
                 </header>
                 <div class="card-body">
-                    <form novalidate>
+                    <form class="track" novalidate>
 
                         <fieldset>
                             <legend>Stupid Form</legend>
@@ -57,8 +57,44 @@
                     </form>
                 </div>
             </article>
+            <article class="card center">
+                <header>
+                    <h1>More forms</h1>
+                </header>
+                <div class="card-body">
+                    <form novalidate id="js-test">
+                        <label>
+                            Message
+                            <input type="text" name="message" />
+                        </label>
+                        <label>
+                            Numbers
+                            <select name="numbers" class="multiselect" multiple size="5">
+                                <option value="one">1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </label>
+                        
+                        <button id="send" type="submit">Selected numbers</button>
+                        <button id="serialize" type="submit">Serialize</button>
+                        <label class="inline">
+                            <input type="checkbox" id="decode" />
+                            Decode
+                        </label>
+                        <button type="reset">Reset</button>
+                    </form>
+                    
+                    <div class="output-container">
+                        <pre id="output"></pre>
+                        <button class="clear">Clear</button>
+                    </div>
+                </div>
+            </article>
         </main>
 
-        <script src="../scripts/events.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="../scripts/forms.js"></script>
 	</body>
 </html>

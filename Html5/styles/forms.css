@@ -3,8 +3,14 @@ fieldset {
 }
 
 label {
+    -webkit-user-select:none;
+    font-size: 0.8rem;
     display: block;
     margin-bottom: 1rem;
+}
+
+.inline {
+    display: inline;
 }
 
 label > span {
@@ -40,4 +46,27 @@ input:required {
 
 input:valid {
     border: 1px solid #ccc;
+}
+
+.multiselect {
+    min-width: 5em;
+}
+
+.clear {
+    vertical-align: top;
+}
+
+.output-container {
+    padding-top: 1rem;
+}
+
+.output-container > pre {
+    display: inline-block;
+    width: 80%;
+    margin: 0;
+    padding: 5px;
+    background-color: #1D1F21;
+    color: white;
+    word-wrap: break-word;
+    min-height: 2rem;
 }
